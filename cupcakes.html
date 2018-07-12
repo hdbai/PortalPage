@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Absolute Positioning Example</title>
+
+<style>
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: Arial;
+		color:#333;
+	}
+
+	main {
+		width: 1000px;
+		margin: auto;
+	}
+
+	header {
+		height: 260px;
+		background: #3B7CB5;
+		padding: 20px;
+		position: relative;
+	}
+
+	h1{
+		color: #fff;
+		font-size: 48px;
+		position: absolute;
+		top:150px;
+		left:150px;
+	}
+
+	/*****
+      h1 has moved because of the absoulte position
+	******/
+
+	#cta {
+		display: block;
+		background-color: green;
+		text-decoration: none;
+		padding: 20px;
+		color: red;
+		font-weight: bold;
+		width: 150px;
+		position: absolute;
+		right: 25px;
+		bottom: 20px;
+		border-radius: 25px;
+
+	}
+
+	/********* REST OF THE PAGE **********/
+
+	section {
+		padding: 20px;
+	}
+
+	p {
+		line-height: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	footer {
+		height: 100px;
+		background: #3B7CB5;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<main>
+		<header>
+			<h1>Cupcakes!</h1>
+			<a id="cta" href="#">Order Now!</a>
+		</header>
+
+		<section>
+			<article>
+				<p>Tiramisu candy dessert chocolate topping tootsie roll lemon drops marzipan. Muffin jelly-o wafer halvah. Brownie jelly beans pudding chocolate bar. Cake brownie bear claw pudding brownie. Donut tiramisu candy canes fruitcake pudding pudding cake ice cream. Jelly-o chocolate cake fruitcake cake cupcake jelly lemon drops halvah muffin. Pudding chocolate bar liquorice chupa chups cotton candy chocolate bar tart cake. Caramels bear claw sweet chocolate bar topping donut icing. Lollipop jujubes cupcake tootsie roll toffee jelly beans. Oat cake chocolate chocolate.</p>
+
+				<p>Lemon drops danish jelly beans. Chocolate cake ice cream soufflé pudding pie tootsie roll biscuit candy toffee. Muffin cotton candy lemon drops macaroon bonbon tiramisu carrot cake sesame snaps carrot cake. Candy canes sweet cheesecake dessert cotton candy macaroon. Pudding muffin halvah dessert biscuit lollipop oat cake gummies. Donut bear claw gummi bears halvah chocolate bar. Cupcake croissant gummi bears pastry.</p>
+
+				<p>Liquorice dessert dragée sweet roll biscuit candy canes. Gummi bears pastry dessert pudding ice cream gummi bears. Jelly beans pie jujubes pie jelly beans. Carrot cake sweet toffee sweet chocolate cake candy canes ice cream sugar plum. Sugar plum sweet roll chocolate sugar plum halvah donut. Tootsie roll sugar plum cheesecake tart chupa chups jelly-o candy canes marzipan tiramisu. Danish pastry liquorice danish gummies. Gummies candy canes liquorice chocolate bar halvah chupa chups. Oat cake tiramisu jujubes cake muffin cotton candy cookie wafer gummi bears.</p>
+
+				<p>Carrot cake topping tart bonbon cupcake chocolate chocolate cake topping gingerbread. Dessert chocolate cake dessert. Cupcake toffee chocolate cake. Jelly-o muffin liquorice cake chocolate cake cheesecake. Dessert jujubes soufflé cake muffin jelly-o. Jelly beans gummi bears carrot cake jelly caramels candy marshmallow dessert. Marzipan caramels soufflé macaroon sugar plum. Macaroon cheesecake cheesecake jelly beans dessert. Soufflé candy dessert.</p>
+
+				<p>Dragée marshmallow candy canes danish lemon drops. Soufflé chupa chups marzipan carrot cake. Bear claw pudding jujubes oat cake soufflé lollipop lollipop candy canes. Cookie gingerbread pudding powder dragée powder candy toffee croissant. Cookie cookie biscuit chocolate cake jelly-o bonbon jelly-o. Gummies powder caramels croissant. Candy canes chocolate bar jelly-o bear claw wafer.</p>
+			</article>
+		</section>
+
+		<footer>
+
+		</footer>
+
+	</main>
+
+</body>
+</html>

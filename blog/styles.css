@@ -1,0 +1,332 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/****************** End CSS RESET *****************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background: url(images/wild_flowers.png);
+}
+
+.container {
+  display: table;
+  width: 1020px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #222;
+  align-items: center;
+  justify-content: center;
+  background: url(images/dmitri-popov-192369.jpg);
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header p {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  font-size: 0.2em;
+  color: #000;
+}
+
+.Aligner-item {
+  font-family: 'Orbitron', sans-serif;
+  max-width: 100%;
+  font-size: 360%;
+}
+
+.Aligner-item--top {
+  margin-top: 20px;
+  font-family: 'Orbitron', sans-serif;
+  align-self: flex-start;
+  font-size: 360%;
+}
+
+.Aligner-item--bottom {
+  margin-bottom: 20px;
+  font-family: 'Orbitron', sans-serif;
+  align-self: flex-end;
+  font-size: 360%;
+}
+
+header h1 {
+  item-align font-size: 400%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  float: left;
+  width: 640px;
+}
+
+article p {
+  margin-top: 10px;
+}
+
+aside {
+  display: block;
+  float: right;
+  width: 340px;
+  padding-left: 50px;
+}
+
+footer {
+  clear: both;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+p a {
+  color: #ebebeb;
+}
+
+.resources {
+  background-color: #cacaca;
+  padding: 20px;
+}
+
+.left {
+  display: block;
+  color: #000;
+  width: 640px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, .2);
+  padding: 25px;
+}
+
+.left:nth-last-child(2) {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.left:nth-last-child(4) {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.left:nth-last-child(6) {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.right {
+  display: block;
+  float: right;
+  width: 380px;
+  height: 1236px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
+}
+
+.right a {
+  color: #aaa;
+}
+
+.right a:hover {
+  color: #fff;
+}
+
+.right h3 {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+ul li {
+  text-align: center;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+.left-content {
+  display: block;
+  color: #000;
+  width: 640px;
+  height: 525px;
+  background-color: rgba(0, 0, 0, .2);
+  padding: 25px;
+}
+
+.right-content {
+  display: block;
+  float: right;
+  width: 380px;
+  height: 525px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, .8);
+  color: #aaa;
+}
+
+.right-content h3, ul li {
+  text-align: center;
+}
+
+.right-content a {
+  color: #aaa;
+}
+
+.right-content a:hover {
+  color: #fff;
+}
+
+.row {
+  display: flex;
+}
+
+.col:first-child {
+  flex: 2;
+  color: #000;
+  background-color: rgba(0, 0, 0, .2);
+  padding: 25px;
+}
+
+.col:last-child {
+  flex: 1;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
+}
+
+.col:last-child li {
+  text-align: left;
+}
+
+.col:last-child h3 {
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.col:last-child a {
+  color: #aaa;
+}
+
+.col:last-child a:hover {
+  color: #fff;
+}
+
+
+/*******Typograohy *******/
+
+h1, h2, h3 {
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.time {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+time {
+  color: tomato;
+  padding: 11px;
+  font-weight: 300;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: #ededed;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 1.7em;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 125%;
+  margin-bottom: 16px;
+}
+
+p, li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+}
+
+article p {
+  padding-left: 10px;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: center;
+}
+
+.right h3 {
+  font-size: 150%;
+  text-align: left;
+}
+
+.right nav ul li {
+  display: block;
+  float: left;
+}

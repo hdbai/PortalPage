@@ -1,0 +1,185 @@
+/********** CSS RESET ***********/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+main, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/********** END CSS RESET ***********/
+
+body {
+  background: url(images/pw_pattern.png) repeat;
+  font-family: 'Luckiest Guy', serif;
+  color: #4a4a49;
+}
+
+main {
+  width: 960px;
+  margin: auto;
+}
+
+header {
+  height: 251px;
+  padding-top: 200px;
+  border-bottom: 20px solid #ec008c;
+  background: url(images/HeaderLlamas.png) right no-repeat;
+}
+
+header h1 {
+  font-size: 107px;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  float: left;
+  width: 256px;
+  padding: 30px;
+  background: #e1e1e1;
+  border-left: 2px solid #ec008c;
+  border-right: 2px solid #ec008c;
+  border-bottom: 2px solid #ec008c;
+  margin-bottom: 50px;
+}
+
+#main-nav ul li a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #4a4a49;
+  display: block;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+#main-content {
+  float: right;
+  width: 610px;
+  padding: 30px 0 0 30px;
+  margin-bottom: 50px;
+}
+
+section {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+footer {
+  clear: both;
+  border-top: 20px solid #ec008c;
+  background: #636363;
+  padding: 10px;
+  overflow: hidden;
+}
+
+footer img {
+  float: left;
+}
+
+footer article {
+  color: #e5e4e3;
+  width: 570px;
+  float: right;
+  padding: 30px;
+  line-height: 90px;
+}
+
+
+/************* Typography ************/
+
+h1, h2, h3, nav ul li a, footer article {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+ul {
+  font-family: 'Lora', serif;
+  margin-left: 1em;
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+
+/************ Image Styles ***********/
+
+p img {
+  padding: 0;
+  max-width: 100%;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.alignright {
+  padding: 4px;
+  margin: 0 0 2px 7px;
+  display: inline;
+}
+
+img.alignleft {
+  padding: 4px;
+  margin: 0 7px 2px 0;
+  display: inline;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left
+}

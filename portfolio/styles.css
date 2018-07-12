@@ -1,0 +1,273 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  background: #222527;
+  color: #f8f8f8;
+  position: relative;
+}
+
+P {
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #7089c2;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.Intro {
+  background: url(images/2.png) no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  border-bottom: 0.75em solid #fff;
+  background-size: cover;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  top: 53%;
+  left: 20%;
+  width: 100%;
+  z-index: 100;
+}
+
+.name p {
+  font-size: 1.25em;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.jumpDown-arrow {
+  position: fixed;
+  bottom: 1.953em;
+  left: 50%;
+  width: 100%;
+  color: #fff;
+  width: 1.6em;
+  height: 1.6em;
+  transform: translateX(-50%) rotate(45deg);
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  z-index: 999;
+}
+
+.jumpDown-arrow:hover {
+  transform: translateX(-50%) scale(1.5) rotate(45deg);
+}
+
+.fillings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  opacity: 0.25;
+  background: radial-gradient(90vw at 20vw 10vh, #2AA1FF 50%, #FF8A2A 95%);
+}
+
+.large {
+  font-size: 2.45em;
+  line-height: 0.9;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.container {
+  position: relative;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+section header {
+  opacity: 0.5;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+section header h4 {
+  font-size: 15px;
+}
+
+.grid {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.grid .left {
+  flex: 1 1 60%;
+}
+
+.grid .right {
+  flex: 1 1 40%;
+  margin-left: 1em;
+}
+
+.none h3 {
+  margin: 25px 0 10px 0;
+}
+
+.none ul {
+  list-style: none;
+}
+
+.none ul li {
+  margin-left: 1.5em;
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+  list-style: circle;
+  list-style-position: outside;
+}
+
+.none ul li span {
+  display: block;
+  color: #aaa;
+  font-size: 0.8em;
+  line-height: 1.7;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}
+
+.works .grid .left {
+  margin-bottom: 1em;
+  padding-left: 1.2em;
+  margin-right: 1rem;
+  border-left: 1px solid #fff000;
+  height: 440px;
+}
+
+.works .grid .left a {
+  display: block;
+  margin-bottom: 1.3em;
+}
+
+.works .grid .left p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.9em;
+  letter-spacing: 1px;
+}
+
+
+/*********************** Nav **********************************/
+
+#hambuger-box {
+  display: block;
+  position: fixed;
+  top: 50%;
+  padding-left: 20px;
+  z-index: 1000;
+}
+
+#hambuger-box input {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  left: 14px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1000;
+}
+
+#hambuger-box span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 999;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.1s ease;
+}
+
+#hambuger-box span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#hambuger-box span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#hambuger-box input:checked~span {
+  transform: rotate(45deg);
+  background: #000;
+}
+
+#hambuger-box input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg);
+}
+
+#hambuger-box input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg);
+}
+
+#menu {
+  position: absolute;
+  width: 150px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  list-style-type: none;
+  transform: translate(-100%, 0);
+  transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+  padding-top: 20px;
+  font-size: 1em;
+  color: #7089c2;
+}
+
+#hambuger-box input:checked~ul {
+  transform: scale(1.0, 1.0);
+}
+
+
+/************ End of Nav ***********/
+
+.contact .grid .right ul {
+  padding-left: 2em;
+}
+
+.iconBox {
+  margin-left: 0.1em;
+}
+
+.footer .grid .right a {
+  padding-right: 1em;
+}
+
+#p1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: none;
+}
